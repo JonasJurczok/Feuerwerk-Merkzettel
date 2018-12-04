@@ -45,9 +45,6 @@
                                 {\normalfont\small\bfseries}}
 \makeatother
 
-% Define BibTeX command
-\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
-    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 
 % Don't print section numbers
 \setcounter{secnumdepth}{0}
@@ -78,27 +75,76 @@
      \Large{\underline{Merkzettel Kategorie 3 Feuerwerk}} \\
 \end{center}
 
-\section{Übersicht}
-Kat 1
-Kat 2
-Kat 3
+\section{Begriffe}
+\subsection{Kategorien}
+Feuerwerk wird in vier Kategorien unterschieden \cite{Kategorien}
+\begin{enumerate}
+\item Kategorie 1 
+Tischfeuerwerk, Knallerbsenm oder Wunderkerzen
+\item Kategorie 2
+Silvesterfeuerwerkt (Batterien, Raketen, Böller)
+\item Kategorie 3
+Feuerwerk mittelgroßer Gefahr. Ebenfalls Batterien, Raketen und Böller. Benötigt eine Erlaubnis nach \$27SprenGG (hier Schein genannt).
+\item Kategorie 4
+Profi/Großfeuerwerk. Nur benutzbar mit spezieller Ausbildung.
+\end{enumerate}
 
-1.4G
-1.3G
+\subsection{Stoffklassen}
+Gefahrstoffe werden in Klassen (1-9) unterteilt. Schwarzpulver und andere Explosivstoffe sind in Klasse 1 einsortiert \cite{Stoffklasse}. 
+
+Da Feuerwerk mit Explosivstoffen hergestellt wird, sind die folgenden Gefahrgutklassen auch für Feuerwerk relevant.
+\begin{enumerate}
+\item 1.1
+Massenexplosionsgefährlich - Alles explodiert gleichzeitig
+\item 1.2
+Teilexplosionsgefährlich - Die Gesamtmenge explodiert in Teilen
+\item 1.3
+Massenfeuergefährlich - Alles fängt Feuer
+\item 1.4
+Reaktion ist auf die Verpackung beschränkt
+\end{enumerate}
+
+\subsection{Brutto vs Netto}
+\begin{enumerate}
+\item NEM - Netto Explosivmasse \cite{NEM} \\
+Menge an Explosionsstoff. Auf der Verpackung angegeben ("Menge an Schwarzpulver")
+\item Bruttomasse \cite{NEM} \\
+Gesamtgewicht des Feuerwerks inklusive Pappe, Papier etc.. Auf der Verpackung angegeben.
+\end{enumerate}
 
 \section{Kauf}
-Mengen
+Grundsätzlich kann jeder Scheininhaber Kategorie 3 Feuerwerk erwerben.
+Die Menge ist dabei höchstens im Schein begrenzt.
+WICHTIG: Beschränkungen zum Transport beachten!
 
 
-\subsection{Fachkunde}
-Es gibt den Schein mit und ohne Fachkunde.
-Fachkunde wird benötigt um bestimmte Artikel der Kategorie 3 und höher zu erwerben (z.B. Zink Raketen)
+\subsection{Sachkunde}
+Es gibt den Schein mit und ohne Sachkunde.
+Sachkunde wird benötigt um bestimmte Artikel der Kategorie 3 und höher zu erwerben (z.B. Zink Raketen)
 
 \section{Transport}
-* Max mengen
-* Dauer?
-* direkter 	Weg?
-* Schutzmaßnahmen (Abdeckungen, Markierungen etc.)
+\subsubsection{Mengen}
+Für den Transport im privaten PKW \cite{Transport} gelten die folgenden Maximalmengen je nach Stoffklasse: \cite{Transportmenge}
+\begin{enumerate}
+\item 1.1 - 1.4 - 3 Kg NEM
+\item 1.1 - 1.3 - 5 Kg Bruttomasse
+\item 1.4 - 50Kg Bruttomasse
+\end{enumerate}
+
+\subsubsection{Dauer}
+Das Feuerwerk darf maximal für einen Zeitraum von 72 Stunden transportiert werden. Damit sind Feuerwerke am Wochenende abgedeckt.
+
+\subsubsection{Weglänge}
+Es ist der direkte Weg zu wählen.
+
+\subsubsection{Schutzmaßnahmen}
+Es ist sicherzustellen\cite{Transport}, dass die Ladung 
+
+\begin{enumerate}
+\item nicht frei wird (sich in einem Karton oder ähnlichem befindet).
+\item mit einer stabilden Decke o.Ä. abgedeckt ist
+\item nicht direkter Sonneneinstrahlung ausgesetzt ist.
+\end{enumerate}
 
 \section{Aufbewahrung}
 \begin{enumerate}
@@ -119,7 +165,28 @@ Die Inhalte dieses Merkzettels wurden sorgfältig geprüft und nach bestem Wisse
 % You can even have references
 \rule{0.3\linewidth}{0.25pt}
 \scriptsize
-\bibliographystyle{abstract}
-\bibliography{refFile}
+\bibliographystyle{plain}
+\begin{thebibliography}{9}
+
+\bibitem{Kategorien}
+http://www.feuerwerk.net/wiki/Kategorie
+
+\bibitem{Stoffklasse}
+https://de.wikipedia.org/wiki/Gefahrgutklasse
+
+\bibitem{NEM}
+http://www.feuerwerk.net/wiki/Nettoexplosivstoffmasse
+
+\bibitem{Transport}
+Anlage zum Abkommen über die internationale Beförderung gefährlicher Güter auf der Straße, Abschnitt 1.1.3.1 a), 
+http://gaa.baden-wuerttemberg.de/servlet/is/16496/2\_2\_1\_1.pdf
+
+\bibitem{Transportmenge}
+(Gefahrgutverordnung Straße, Eisenbahn und Binnenschifffahrt - GGVSEB), Abschnitt 2.1 a),
+http://gaa.baden-wuerttemberg.de/servlet/is/16496/2\_2\_1.pdf
+
+
+\end{thebibliography}
+
 \end{multicols}
 \end{document}
